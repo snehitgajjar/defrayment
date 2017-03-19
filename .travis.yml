@@ -1,0 +1,13 @@
+language: java
+sudo: true
+install: true
+script:
+  - sudo apt-get install oracle-java8-set-default
+  - mvn clean
+  - mvn install
+addons:
+  apt:
+      packages:
+            - oracle-java8-installer
+jdk:
+  - oraclejdk8
