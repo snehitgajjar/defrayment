@@ -33,6 +33,7 @@ public class UserController {
         session.beginTransaction();
  
         User user = new User();
+
         System.out.println("========"+request.getState()+" : "+ request.getName());
         user.setName(request.getName());
         user.setState(request.getState());
